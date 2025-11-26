@@ -3,7 +3,7 @@ export const EVENT_CONFIG = {
     name: "Franco",
   },
   event: {
-    date: "2025-01-18",
+    date: "2026-01-18",
     time: "11:00",
     displayDate: "18 de Enero",
     displayTime: "11:00 A.M.",
