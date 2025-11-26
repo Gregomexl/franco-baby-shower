@@ -70,18 +70,17 @@ export function Countdown() {
             className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-3xl mx-auto"
           >
             {timeBlocks.map((block) => (
-              <motion.div
+              <div
                 key={block.label}
-                variants={item}
                 className="bg-white/60 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-green-100"
               >
-                <div className="text-4xl md:text-5xl font-bold text-green-500 font-heading">
+                <div className="text-4xl md:text-5xl font-bold text-green-500 font-heading tabular-nums">
                   {String(block.value).padStart(2, '0')}
                 </div>
                 <div className="text-sm md:text-base text-text-muted mt-2 uppercase tracking-wider">
                   {block.label}
                 </div>
-              </motion.div>
+              </div>
             ))}
           </motion.div>
         </motion.div>
