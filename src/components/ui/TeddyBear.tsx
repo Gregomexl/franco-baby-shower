@@ -7,16 +7,10 @@ export function TeddyBear() {
       animate={{
         opacity: 1,
         scale: 1,
-        y: [0, -5, 0],
       }}
       transition={{
         duration: 0.8,
         ease: "easeOut",
-        y: {
-          duration: 3,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }
       }}
       className="w-full h-full flex items-center justify-center"
     >
@@ -125,42 +119,46 @@ export function TeddyBear() {
         </motion.g>
 
         {/* Left Arm */}
-        <motion.ellipse
-          cx="88"
-          cy="190"
-          rx="20"
-          ry="42"
-          fill="#c4a484"
-          transform="rotate(-15 88 190)"
+        <motion.g
           initial={{ scale: 0, transformOrigin: "88px 190px" }}
           animate={{ scale: 1 }}
-          transition={{ delay: 0.3, duration: 0.4, type: "spring", stiffness: 180 }}
-        />
+          transition={{ delay: 0.3, duration: 0.5, ease: "easeOut" }}
+        >
+          <ellipse
+            cx="88"
+            cy="190"
+            rx="20"
+            ry="42"
+            fill="#c4a484"
+            transform="rotate(-15 88 190)"
+          />
+        </motion.g>
 
         {/* Right Arm - Raised for balloons */}
-        <motion.ellipse
-          cx="200"
-          cy="170"
-          rx="20"
-          ry="42"
-          fill="#c4a484"
-          transform="rotate(35 200 170)"
+        <motion.g
           initial={{ scale: 0, transformOrigin: "200px 170px" }}
           animate={{ scale: 1 }}
-          transition={{ delay: 0.3, duration: 0.4, type: "spring", stiffness: 180 }}
-        />
+          transition={{ delay: 0.3, duration: 0.5, ease: "easeOut" }}
+        >
+          <ellipse
+            cx="200"
+            cy="170"
+            rx="20"
+            ry="42"
+            fill="#c4a484"
+            transform="rotate(35 200 170)"
+          />
+        </motion.g>
 
         {/* Right Hand/Paw holding balloons */}
-        <motion.circle
-          cx="205"
-          cy="140"
-          r="14"
-          fill="#c4a484"
-          initial={{ scale: 0 }}
+        <motion.g
+          initial={{ scale: 0, transformOrigin: "224px 136px" }}
           animate={{ scale: 1 }}
-          transition={{ delay: 0.35, duration: 0.3, type: "spring" }}
-        />
-        <circle cx="205" cy="140" r="10" fill="#e8d4bf" />
+          transition={{ delay: 0.35, duration: 0.3, ease: "easeOut" }}
+        >
+          <circle cx="224" cy="136" r="14" fill="#c4a484" />
+          <circle cx="224" cy="136" r="10" fill="#e8d4bf" />
+        </motion.g>
 
         {/* Balloon Strings */}
         <motion.g
@@ -169,15 +167,15 @@ export function TeddyBear() {
           transition={{ delay: 0.8, duration: 0.4 }}
         >
           <motion.path
-            d="M 205 140 Q 212 65 220 53"
+            d="M 224 136 Q 222 65 220 53"
             stroke="#8b7355"
             strokeWidth="1.5"
             fill="none"
             animate={{
               d: [
-                "M 205 140 Q 212 65 220 53",
-                "M 205 140 Q 215 65 220 53",
-                "M 205 140 Q 212 65 220 53",
+                "M 224 136 Q 222 65 220 53",
+                "M 224 136 Q 220 65 220 53",
+                "M 224 136 Q 222 65 220 53",
               ]
             }}
             transition={{
@@ -187,15 +185,15 @@ export function TeddyBear() {
             }}
           />
           <motion.path
-            d="M 205 140 Q 242 50 270 28"
+            d="M 224 136 Q 250 50 270 28"
             stroke="#8b7355"
             strokeWidth="1.5"
             fill="none"
             animate={{
               d: [
-                "M 205 140 Q 242 50 270 28",
-                "M 205 140 Q 245 50 270 28",
-                "M 205 140 Q 242 50 270 28",
+                "M 224 136 Q 250 50 270 28",
+                "M 224 136 Q 253 50 270 28",
+                "M 224 136 Q 250 50 270 28",
               ]
             }}
             transition={{
@@ -205,15 +203,15 @@ export function TeddyBear() {
             }}
           />
           <motion.path
-            d="M 205 140 Q 182 50 170 25"
+            d="M 224 136 Q 190 50 170 25"
             stroke="#8b7355"
             strokeWidth="1.5"
             fill="none"
             animate={{
               d: [
-                "M 205 140 Q 182 50 170 25",
-                "M 205 140 Q 179 50 170 25",
-                "M 205 140 Q 182 50 170 25",
+                "M 224 136 Q 190 50 170 25",
+                "M 224 136 Q 187 50 170 25",
+                "M 224 136 Q 190 50 170 25",
               ]
             }}
             transition={{
