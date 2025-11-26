@@ -1,9 +1,18 @@
+import { Hero } from './components/sections/Hero'
+import { EventDetails } from './components/sections/EventDetails'
+import { ActionButtons } from './components/sections/ActionButtons'
+import { Footer } from './components/sections/Footer'
+import { Container } from './components/layout/Container'
+
 function App() {
   return (
     <div className="min-h-screen">
-      <h1 className="text-4xl font-script text-center py-12 text-green-500">
-        Baby Shower Franco
-      </h1>
+      <Container>
+        <Hero />
+      </Container>
+      <EventDetails />
+      <ActionButtons />
+      <Footer />
     </div>
   )
 }
