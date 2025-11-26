@@ -17,15 +17,6 @@ const item = {
   show: { opacity: 1, y: 0 }
 }
 
-const float = {
-  y: [-3, 3, -3],
-  transition: {
-    duration: 3,
-    repeat: Infinity,
-    ease: "easeInOut"
-  }
-}
-
 export function Footer() {
   return (
     <footer className="py-24 bg-gradient-to-b from-beige to-green-50/20 relative overflow-hidden">
@@ -56,7 +47,8 @@ export function Footer() {
             ></motion.div>
             <motion.span
               className="text-green-500 text-2xl"
-              animate={float}
+              animate={{ y: [-3, 3, -3] }}
+              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
             >❖</motion.span>
             <motion.div
               className="h-px w-24 bg-gradient-to-l from-transparent via-green-400/60 to-green-300"
