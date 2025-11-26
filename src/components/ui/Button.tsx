@@ -27,8 +27,12 @@ export function Button({
     <motion.button
       onClick={onClick}
       className={`${baseClasses} ${variantClasses[variant]} ${className}`}
-      whileHover={{ scale: 1.02 }}
-      whileTap={{ scale: 0.98 }}
+      whileHover={{
+        scale: 1.03,
+        y: -2,
+        boxShadow: "0 20px 25px -5px rgba(90, 124, 89, 0.3)",
+      }}
+      whileTap={{ scale: 0.97 }}
       transition={{ duration: 0.2 }}
     >
       {icon}

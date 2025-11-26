@@ -20,7 +20,7 @@ const item = {
 
 export function EventDetails() {
   return (
-    <section className="py-16 bg-beige">
+    <section className="py-12 md:py-16 bg-beige relative z-10">
       <Container>
         <motion.div
           variants={container}
@@ -30,7 +30,7 @@ export function EventDetails() {
           className="space-y-12"
         >
           {/* Date and Time */}
-          <div className="grid grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 md:gap-12">
             <motion.div variants={item} className="text-center space-y-3">
               <Calendar className="w-8 h-8 mx-auto text-green-500" />
               <p className="text-text-muted text-sm uppercase tracking-wider">
