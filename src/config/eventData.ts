@@ -22,4 +22,8 @@ export const EVENT_CONFIG = {
   parents: {
     names: "Familia Franco",
   },
+  registry: {
+    url: "https://www.amazon.com.mx/baby-reg/gregoryonasisgomez-blas-febrero-2026-monterrey/3G9RQZC10WBP6",
+    platform: "Amazon",
+  },
 } as const;

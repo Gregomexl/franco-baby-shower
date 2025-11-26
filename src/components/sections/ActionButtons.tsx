@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { MapPin, MessageCircle } from 'lucide-react'
+import { MapPin, MessageCircle, Gift } from 'lucide-react'
 import { useState } from 'react'
 import { EVENT_CONFIG } from '../../config/eventData'
 import { Button } from '../ui/Button'
@@ -26,6 +26,10 @@ export function ActionButtons() {
 
   const handleLocation = () => {
     window.open(EVENT_CONFIG.venue.googleMapsUrl, '_blank')
+  }
+
+  const handleRegistry = () => {
+    window.open(EVENT_CONFIG.registry.url, '_blank')
   }
 
   const handleRSVP = () => {
@@ -60,6 +64,17 @@ export function ActionButtons() {
                 aria-label="Ver ubicación en Google Maps"
               >
                 Ver Ubicación
+              </Button>
+            </motion.div>
+
+            <motion.div variants={item}>
+              <Button
+                onClick={handleRegistry}
+                variant="secondary"
+                icon={<Gift className="w-5 h-5" />}
+                aria-label="Ver mesa de regalos en Amazon"
+              >
+                Mesa de Regalos
               </Button>
             </motion.div>
 
