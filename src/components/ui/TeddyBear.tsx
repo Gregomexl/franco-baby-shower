@@ -7,10 +7,16 @@ export function TeddyBear() {
       animate={{
         opacity: 1,
         scale: 1,
+        y: [0, -8, 0],
       }}
       transition={{
         duration: 0.8,
         ease: "easeOut",
+        y: {
+          duration: 3,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }
       }}
       className="w-full h-full flex items-center justify-center"
     >
