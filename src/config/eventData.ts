@@ -7,7 +7,7 @@ export const EVENT_CONFIG = {
     time: "11:00",
     displayDate: "18 de Enero",
     displayTime: "11:00 A.M.",
-    dayOfWeek: "Sábado",
+    dayOfWeek: "Domingo",
   },
   venue: {
     name: "Edificio Aluna",
