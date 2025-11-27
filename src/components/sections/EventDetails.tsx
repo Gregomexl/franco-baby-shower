@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { MapPin } from 'lucide-react'
 import { EVENT_CONFIG } from '../../config/eventData'
 import { Container } from '../layout/Container'
+import { Button } from '../ui/Button'
 
 const container = {
   hidden: { opacity: 0 },
@@ -19,6 +20,10 @@ const item = {
 }
 
 export function EventDetails() {
+  const handleLocation = () => {
+    window.open(EVENT_CONFIG.venue.googleMapsUrl, '_blank')
+  }
+
   return (
     <section className="py-12 md:py-16 relative overflow-hidden">
       {/* Watercolor Clouds - Darker Outlines */}
@@ -181,6 +186,17 @@ export function EventDetails() {
             <p className="text-text-secondary">
               {EVENT_CONFIG.venue.city}
             </p>
+
+            <div className="pt-4">
+              <Button
+                onClick={handleLocation}
+                variant="secondary"
+                icon={<MapPin className="w-5 h-5" />}
+                aria-label="Ver ubicación en Google Maps"
+              >
+                Ver Ubicación
+              </Button>
+            </div>
           </motion.div>
         </motion.div>
       </Container>

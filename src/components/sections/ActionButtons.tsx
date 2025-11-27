@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { MapPin, MessageCircle, Gift, Calendar, Share2 } from 'lucide-react'
+import { MessageCircle, Gift, Calendar, Share2 } from 'lucide-react'
 import { useState } from 'react'
 import { EVENT_CONFIG } from '../../config/eventData'
 import { Button } from '../ui/Button'
@@ -24,10 +24,6 @@ const item = {
 
 export function ActionButtons() {
   const [showConfetti, setShowConfetti] = useState(false)
-
-  const handleLocation = () => {
-    window.open(EVENT_CONFIG.venue.googleMapsUrl, '_blank')
-  }
 
   const handleRegistry = () => {
     window.open(EVENT_CONFIG.registry.url, '_blank')
@@ -177,17 +173,6 @@ export function ActionButtons() {
             viewport={{ once: true, margin: "-100px" }}
             className="space-y-4"
           >
-            <motion.div variants={item}>
-              <Button
-                onClick={handleLocation}
-                variant="secondary"
-                icon={<MapPin className="w-5 h-5" />}
-                aria-label="Ver ubicación en Google Maps"
-              >
-                Ver Ubicación
-              </Button>
-            </motion.div>
-
             <motion.div variants={item}>
               <Button
                 onClick={handleCalendar}
