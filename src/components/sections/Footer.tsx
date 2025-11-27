@@ -19,12 +19,105 @@ const item = {
 
 export function Footer() {
   return (
-    <footer className="py-24 bg-gradient-to-b from-beige to-green-50/20 relative overflow-hidden">
-      {/* Decorative Background Elements */}
-      <div className="absolute inset-0 opacity-30">
-        <div className="absolute top-10 left-10 w-32 h-32 bg-green-200/20 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-10 right-10 w-40 h-40 bg-green-300/20 rounded-full blur-3xl"></div>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-green-100/10 rounded-full blur-3xl"></div>
+    <footer className="py-24 relative overflow-hidden">
+      {/* Watercolor Clouds - Darker Outlines */}
+      <div className="absolute inset-0 pointer-events-none opacity-55">
+        <svg className="absolute top-12 left-8" width="180" height="70" viewBox="0 0 180 70">
+          <ellipse cx="45" cy="35" rx="45" ry="30" fill="white" opacity="0.7" filter="url(#footerBlur1)" />
+          <ellipse cx="90" cy="32" rx="48" ry="32" fill="white" opacity="0.65" filter="url(#footerBlur1)" />
+          <ellipse cx="135" cy="38" rx="42" ry="28" fill="white" opacity="0.7" filter="url(#footerBlur1)" />
+          <defs>
+            <filter id="footerBlur1">
+              <feGaussianBlur stdDeviation="4" />
+            </filter>
+          </defs>
+        </svg>
+
+        <svg className="absolute bottom-16 right-12" width="160" height="65" viewBox="0 0 160 65">
+          <ellipse cx="40" cy="32" rx="40" ry="28" fill="white" opacity="0.65" filter="url(#footerBlur2)" />
+          <ellipse cx="80" cy="30" rx="45" ry="30" fill="white" opacity="0.7" filter="url(#footerBlur2)" />
+          <ellipse cx="120" cy="35" rx="38" ry="26" fill="white" opacity="0.7" filter="url(#footerBlur2)" />
+          <defs>
+            <filter id="footerBlur2">
+              <feGaussianBlur stdDeviation="4" />
+            </filter>
+          </defs>
+        </svg>
+
+        <svg className="absolute top-1/3 right-20" width="155" height="62" viewBox="0 0 155 62">
+          <ellipse cx="39" cy="31" rx="39" ry="27" fill="white" opacity="0.65" filter="url(#footerBlur3)" />
+          <ellipse cx="77" cy="29" rx="43" ry="29" fill="white" opacity="0.7" filter="url(#footerBlur3)" />
+          <ellipse cx="116" cy="33" rx="37" ry="25" fill="white" opacity="0.7" filter="url(#footerBlur3)" />
+          <defs>
+            <filter id="footerBlur3">
+              <feGaussianBlur stdDeviation="4" />
+            </filter>
+          </defs>
+        </svg>
+      </div>
+
+      {/* Scattered Stars */}
+      <div className="absolute inset-0 pointer-events-none max-w-6xl mx-auto px-8">
+        <motion.div
+          className="absolute top-24 left-12 text-2xl opacity-60"
+          style={{ color: '#7A9B84' }}
+          animate={{ scale: [1, 1.15, 1], rotate: [0, 8, 0] }}
+          transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+        >★</motion.div>
+        <motion.div
+          className="absolute top-1/3 left-16 text-xl opacity-55"
+          style={{ color: '#7A9B84' }}
+          animate={{ scale: [1, 1.1, 1], rotate: [0, -6, 0] }}
+          transition={{ duration: 4.3, repeat: Infinity, ease: "easeInOut", delay: 0.3 }}
+        >★</motion.div>
+        <motion.div
+          className="absolute top-1/2 left-8 text-xl opacity-55"
+          style={{ color: '#7A9B84' }}
+          animate={{ scale: [1, 1.1, 1], rotate: [0, -8, 0] }}
+          transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+        >★</motion.div>
+        <motion.div
+          className="absolute bottom-1/3 left-14 text-2xl opacity-60"
+          style={{ color: '#7A9B84' }}
+          animate={{ scale: [1, 1.12, 1], rotate: [0, 10, 0] }}
+          transition={{ duration: 4.8, repeat: Infinity, ease: "easeInOut", delay: 0.8 }}
+        >★</motion.div>
+        <motion.div
+          className="absolute bottom-24 left-12 text-xl opacity-55"
+          style={{ color: '#7A9B84' }}
+          animate={{ scale: [1, 1.1, 1], rotate: [0, 10, 0] }}
+          transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+        >★</motion.div>
+        <motion.div
+          className="absolute top-20 right-12 text-2xl opacity-60"
+          style={{ color: '#E5D4C1' }}
+          animate={{ scale: [1, 1.15, 1], rotate: [0, -8, 0] }}
+          transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 0.3 }}
+        >★</motion.div>
+        <motion.div
+          className="absolute top-1/3 right-16 text-xl opacity-55"
+          style={{ color: '#E5D4C1' }}
+          animate={{ scale: [1, 1.1, 1], rotate: [0, 6, 0] }}
+          transition={{ duration: 4.4, repeat: Infinity, ease: "easeInOut", delay: 0.6 }}
+        >★</motion.div>
+        <motion.div
+          className="absolute top-1/2 right-8 text-xl opacity-55"
+          style={{ color: '#E5D4C1' }}
+          animate={{ scale: [1, 1.1, 1], rotate: [0, 10, 0] }}
+          transition={{ duration: 4.6, repeat: Infinity, ease: "easeInOut", delay: 0.8 }}
+        >★</motion.div>
+        <motion.div
+          className="absolute bottom-1/3 right-14 text-2xl opacity-60"
+          style={{ color: '#E5D4C1' }}
+          animate={{ scale: [1, 1.12, 1], rotate: [0, -8, 0] }}
+          transition={{ duration: 4.9, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+        >★</motion.div>
+        <motion.div
+          className="absolute bottom-20 right-12 text-xl opacity-55"
+          style={{ color: '#E5D4C1' }}
+          animate={{ scale: [1, 1.15, 1], rotate: [0, -10, 0] }}
+          transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut", delay: 1.2 }}
+        >★</motion.div>
       </div>
 
       <Container>
@@ -110,6 +203,18 @@ export function Footer() {
               animate={{ scale: [1, 1.2, 1], y: [0, -5, 0] }}
               transition={{ duration: 2, repeat: Infinity, ease: "easeInOut", delay: 0.6 }}
             >♥</motion.span>
+          </motion.div>
+
+          {/* Family Image */}
+          <motion.div
+            variants={item}
+            className="mb-8"
+          >
+            <img
+              src="/images/family.png"
+              alt="Familia Gomez de la Cruz"
+              className="w-48 h-auto mx-auto drop-shadow-lg"
+            />
           </motion.div>
 
           {/* Family Name with Elegant Frame */}

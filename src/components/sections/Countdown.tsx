@@ -31,7 +31,7 @@ export function Countdown() {
 
   if (timeLeft.isExpired) {
     return (
-      <section className="py-12 md:py-16 relative z-10">
+      <section className="py-12 md:py-16 relative overflow-hidden">
         <Container>
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
@@ -49,7 +49,96 @@ export function Countdown() {
   }
 
   return (
-    <section className="py-12 md:py-16 relative z-10">
+    <section className="py-12 md:py-16 relative overflow-hidden">
+      {/* Watercolor Clouds - Darker Outlines */}
+      <div className="absolute inset-0 pointer-events-none opacity-50">
+        <svg className="absolute top-10 left-10" width="140" height="55" viewBox="0 0 140 55">
+          <ellipse cx="35" cy="28" rx="35" ry="24" fill="white" opacity="0.7" filter="url(#countBlur1)" />
+          <ellipse cx="70" cy="26" rx="40" ry="26" fill="white" opacity="0.65" filter="url(#countBlur1)" />
+          <ellipse cx="105" cy="30" rx="33" ry="22" fill="white" opacity="0.7" filter="url(#countBlur1)" />
+          <defs>
+            <filter id="countBlur1">
+              <feGaussianBlur stdDeviation="4" />
+            </filter>
+          </defs>
+        </svg>
+
+        <svg className="absolute bottom-16 right-16" width="135" height="54" viewBox="0 0 135 54">
+          <ellipse cx="34" cy="27" rx="34" ry="23" fill="white" opacity="0.65" filter="url(#countBlur2)" />
+          <ellipse cx="67" cy="25" rx="38" ry="25" fill="white" opacity="0.7" filter="url(#countBlur2)" />
+          <ellipse cx="101" cy="29" rx="32" ry="21" fill="white" opacity="0.7" filter="url(#countBlur2)" />
+          <defs>
+            <filter id="countBlur2">
+              <feGaussianBlur stdDeviation="4" />
+            </filter>
+          </defs>
+        </svg>
+      </div>
+
+      {/* Stars */}
+      <div className="absolute inset-0 pointer-events-none max-w-6xl mx-auto px-8">
+        <motion.div
+          className="absolute top-20 left-12 text-2xl opacity-60"
+          style={{ color: '#7A9B84' }}
+          animate={{ scale: [1, 1.15, 1], rotate: [0, 10, 0] }}
+          transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut" }}
+        >★</motion.div>
+        <motion.div
+          className="absolute top-1/4 left-16 text-xl opacity-55"
+          style={{ color: '#7A9B84' }}
+          animate={{ scale: [1, 1.1, 1], rotate: [0, -6, 0] }}
+          transition={{ duration: 4.3, repeat: Infinity, ease: "easeInOut", delay: 0.3 }}
+        >★</motion.div>
+        <motion.div
+          className="absolute top-1/3 left-8 text-xl opacity-55"
+          style={{ color: '#7A9B84' }}
+          animate={{ scale: [1, 1.1, 1], rotate: [0, -8, 0] }}
+          transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+        >★</motion.div>
+        <motion.div
+          className="absolute top-1/2 left-14 text-2xl opacity-60"
+          style={{ color: '#7A9B84' }}
+          animate={{ scale: [1, 1.12, 1], rotate: [0, 8, 0] }}
+          transition={{ duration: 4.8, repeat: Infinity, ease: "easeInOut", delay: 0.8 }}
+        >★</motion.div>
+        <motion.div
+          className="absolute bottom-20 left-12 text-xl opacity-55"
+          style={{ color: '#7A9B84' }}
+          animate={{ scale: [1, 1.1, 1], rotate: [0, 12, 0] }}
+          transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+        >★</motion.div>
+        <motion.div
+          className="absolute top-16 right-12 text-2xl opacity-60"
+          style={{ color: '#E5D4C1' }}
+          animate={{ scale: [1, 1.15, 1], rotate: [0, -8, 0] }}
+          transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 0.3 }}
+        >★</motion.div>
+        <motion.div
+          className="absolute top-1/4 right-16 text-xl opacity-55"
+          style={{ color: '#E5D4C1' }}
+          animate={{ scale: [1, 1.1, 1], rotate: [0, 6, 0] }}
+          transition={{ duration: 4.4, repeat: Infinity, ease: "easeInOut", delay: 0.6 }}
+        >★</motion.div>
+        <motion.div
+          className="absolute top-1/3 right-8 text-xl opacity-55"
+          style={{ color: '#E5D4C1' }}
+          animate={{ scale: [1, 1.1, 1], rotate: [0, 10, 0] }}
+          transition={{ duration: 4.6, repeat: Infinity, ease: "easeInOut", delay: 0.8 }}
+        >★</motion.div>
+        <motion.div
+          className="absolute top-1/2 right-14 text-2xl opacity-60"
+          style={{ color: '#E5D4C1' }}
+          animate={{ scale: [1, 1.12, 1], rotate: [0, -8, 0] }}
+          transition={{ duration: 4.9, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+        >★</motion.div>
+        <motion.div
+          className="absolute bottom-16 right-12 text-xl opacity-55"
+          style={{ color: '#E5D4C1' }}
+          animate={{ scale: [1, 1.1, 1], rotate: [0, -10, 0] }}
+          transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut", delay: 1.2 }}
+        >★</motion.div>
+      </div>
+
       <Container>
         <motion.div
           variants={container}
