@@ -2,6 +2,7 @@ import { Hero } from './components/sections/Hero'
 import { EventDetails } from './components/sections/EventDetails'
 import { Countdown } from './components/sections/Countdown'
 import { ActionButtons } from './components/sections/ActionButtons'
+import { PhotoGallery } from './components/sections/PhotoGallery'
 import { Footer } from './components/sections/Footer'
 import { Container } from './components/layout/Container'
 import { AnimatedBalloons } from './components/ui/AnimatedBalloons'
@@ -16,6 +17,7 @@ function App() {
       <EventDetails />
       <Countdown />
       <ActionButtons />
+      <PhotoGallery />
       <Footer />
     </div>
   )

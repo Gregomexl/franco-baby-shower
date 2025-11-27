@@ -26,4 +26,8 @@ export const EVENT_CONFIG = {
     url: "https://www.amazon.com.mx/baby-reg/gregoryonasisgomez-blas-febrero-2026-monterrey/3G9RQZC10WBP6",
     platform: "Amazon",
   },
+  photoGallery: {
+    googlePhotosAlbumUrl: "https://photos.app.goo.gl/GHMjT5LBesqdyrfX9",
+    enabled: true,
+  },
 } as const;
