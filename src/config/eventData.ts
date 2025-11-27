@@ -20,7 +20,7 @@ export const EVENT_CONFIG = {
     message: "¡Hola! Confirmo mi asistencia al Baby Shower de Franco 🧸",
   },
   parents: {
-    names: "Familia Gomez de la Cruz",
+    names: "Familia Gómez de la Cruz",
   },
   registry: {
     url: "https://www.amazon.com.mx/baby-reg/gregoryonasisgomez-blas-febrero-2026-monterrey/3G9RQZC10WBP6",

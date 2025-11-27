@@ -175,12 +175,26 @@ export function Footer() {
           {/* Main Message with Enhanced Styling */}
           <motion.div
             variants={item}
-            className="relative mb-10"
+            className="relative mb-10 max-w-2xl mx-auto"
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-green-100/0 via-green-100/20 to-green-100/0 rounded-2xl blur-xl"></div>
-            <p className="relative text-3xl md:text-4xl font-heading text-text-primary leading-relaxed px-6 py-4">
-              ¡Te esperamos con mucho <span className="text-green-500">cariño</span>!
-            </p>
+            {/* Decorative line above */}
+            <div className="h-px w-full max-w-sm mx-auto bg-gradient-to-r from-transparent via-green-400/50 to-transparent mb-6"></div>
+
+            {/* Message container with glow effect */}
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-green-100/0 via-green-100/30 to-green-100/0 rounded-3xl blur-2xl"></div>
+              <motion.p
+                className="relative text-6xl md:text-7xl lg:text-8xl font-script text-text-primary leading-relaxed px-8 py-6"
+                style={{ color: '#7A9B84' }}
+                animate={{ scale: [1, 1.02, 1] }}
+                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" as const }}
+              >
+                ¡Te esperamos!
+              </motion.p>
+            </div>
+
+            {/* Decorative line below */}
+            <div className="h-px w-full max-w-sm mx-auto bg-gradient-to-r from-transparent via-green-400/50 to-transparent mt-6"></div>
           </motion.div>
 
           {/* Animated Hearts Decoration */}
@@ -215,7 +229,7 @@ export function Footer() {
           >
             <img
               src="/images/family.png"
-              alt="Familia Gomez de la Cruz"
+              alt="Familia Gómez de la Cruz"
               className="w-48 h-auto mx-auto drop-shadow-lg"
             />
           </motion.div>
@@ -232,7 +246,7 @@ export function Footer() {
             <div className="absolute -bottom-4 -right-4 w-12 h-12 border-r-2 border-b-2 border-green-400/40 rounded-br-lg"></div>
 
             <div className="py-8 px-12">
-              <p className="text-3xl md:text-4xl text-text-primary font-heading tracking-wide">
+              <p className="text-3xl md:text-4xl text-text-primary font-serif tracking-wider font-light">
                 {EVENT_CONFIG.parents.names}
               </p>
             </div>
