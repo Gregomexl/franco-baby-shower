@@ -1,10 +1,11 @@
 import { motion } from 'framer-motion'
-import { MapPin, MessageCircle, Gift } from 'lucide-react'
+import { MapPin, MessageCircle, Gift, Calendar } from 'lucide-react'
 import { useState } from 'react'
 import { EVENT_CONFIG } from '../../config/eventData'
 import { Button } from '../ui/Button'
 import { Container } from '../layout/Container'
 import { Confetti } from '../ui/Confetti'
+import { downloadCalendarFile } from '../../utils/calendar'
 
 const container = {
   hidden: { opacity: 0 },
@@ -30,6 +31,10 @@ export function ActionButtons() {
 
   const handleRegistry = () => {
     window.open(EVENT_CONFIG.registry.url, '_blank')
+  }
+
+  const handleCalendar = () => {
+    downloadCalendarFile()
   }
 
   const handleRSVP = () => {
@@ -153,6 +158,17 @@ export function ActionButtons() {
                 aria-label="Ver ubicación en Google Maps"
               >
                 Ver Ubicación
+              </Button>
+            </motion.div>
+
+            <motion.div variants={item}>
+              <Button
+                onClick={handleCalendar}
+                variant="secondary"
+                icon={<Calendar className="w-5 h-5" />}
+                aria-label="Agregar al calendario"
+              >
+                Agregar al Calendario
               </Button>
             </motion.div>
 
