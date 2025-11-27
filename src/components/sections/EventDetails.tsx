@@ -137,7 +137,7 @@ export function EventDetails() {
           {/* Date and Time - Elegant Layout */}
           <motion.div variants={item} className="text-center space-y-6 max-w-2xl mx-auto">
             {/* Month */}
-            <p className="text-3xl md:text-4xl font-serif text-text-secondary tracking-wider">
+            <p className="heading-2 text-text-secondary">
               Enero
             </p>
 
@@ -147,13 +147,13 @@ export function EventDetails() {
               <div className="h-px w-full max-w-md mx-auto bg-text-muted/40"></div>
 
               <div className="flex items-center justify-center gap-4 text-text-primary">
-                <p className="text-2xl md:text-3xl font-serif tracking-wide">
+                <p className="heading-3">
                   {EVENT_CONFIG.event.dayOfWeek}
                 </p>
                 <p className="text-6xl md:text-7xl font-serif font-bold">
                   18
                 </p>
-                <p className="text-2xl md:text-3xl font-serif tracking-wide">
+                <p className="heading-3">
                   {EVENT_CONFIG.event.displayTime}
                 </p>
               </div>
@@ -163,7 +163,7 @@ export function EventDetails() {
             </div>
 
             {/* Year */}
-            <p className="text-3xl md:text-4xl font-serif text-text-secondary tracking-wider">
+            <p className="heading-2 text-text-secondary">
               2026
             </p>
           </motion.div>
@@ -177,13 +177,13 @@ export function EventDetails() {
           {/* Venue */}
           <motion.div variants={item} className="text-center space-y-4">
             <MapPin className="w-10 h-10 mx-auto text-green-500" />
-            <h3 className="text-2xl font-heading font-semibold text-text-primary">
+            <h3 className="heading-3 font-semibold text-text-primary">
               {EVENT_CONFIG.venue.name}
             </h3>
-            <p className="text-text-secondary">
+            <p className="body-base text-text-secondary">
               {EVENT_CONFIG.venue.address}
             </p>
-            <p className="text-text-secondary">
+            <p className="body-base text-text-secondary">
               {EVENT_CONFIG.venue.city}
             </p>
 

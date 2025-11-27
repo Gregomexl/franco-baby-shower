@@ -114,7 +114,7 @@ export function PhotoGallery() {
               </motion.div>
             </div>
 
-            <h2 className="text-4xl md:text-5xl font-serif text-text-primary">
+            <h2 className="heading-1 text-text-primary">
              ¡Comparte tus Fotos!
             </h2>
           </motion.div>
@@ -162,7 +162,7 @@ export function PhotoGallery() {
 
           {/* Info Text */}
           <motion.div variants={item} className="text-center">
-            <p className="text-sm text-text-muted">
+            <p className="body-small text-text-muted">
               Las fotos se guardan en un álbum compartido de Google Photos
             </p>
           </motion.div>

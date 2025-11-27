@@ -219,8 +219,8 @@ export function Hero() {
         {/* Invitation Text */}
         <motion.p
           variants={item}
-          className="text-3xl md:text-4xl mb-4 italic"
-          style={{ color: '#E5C896', fontFamily: 'cursive' }}
+          className="body-large italic mb-4"
+          style={{ color: '#E5C896' }}
         >
           Acompáñanos a celebrar
         </motion.p>
@@ -228,8 +228,8 @@ export function Hero() {
         {/* Baby Shower Title */}
         <motion.h2
           variants={item}
-          className="text-4xl md:text-5xl lg:text-6xl font-serif tracking-widest mb-6"
-          style={{ fontFamily: 'Georgia, serif', color: '#7A9B84' }}
+          className="display-title mb-6"
+          style={{ color: '#7A9B84' }}
         >
           BABY SHOWER
         </motion.h2>
@@ -237,7 +237,7 @@ export function Hero() {
         {/* Baby Name - Franco */}
         <motion.h1
           variants={item}
-          className="text-7xl md:text-8xl font-script mb-8"
+          className="display-hero mb-8"
           style={{ color: '#8B6F47' }}
         >
           Franco
@@ -268,10 +268,10 @@ export function Hero() {
 
         {/* Main Message */}
         <motion.div variants={item} className="space-y-2 mb-10 max-w-2xl mx-auto">
-          <p className="text-xl md:text-2xl text-text-primary font-light leading-relaxed">
+          <p className="body-large text-text-primary">
             Un nuevo sol está por iluminar nuestro hogar
           </p>
-          <p className="text-xl md:text-2xl text-text-secondary font-light italic">
+          <p className="body-large text-text-secondary italic">
             llenándolo de amor y felicidad.
           </p>
         </motion.div>

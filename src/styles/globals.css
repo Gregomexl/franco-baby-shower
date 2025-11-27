@@ -20,6 +20,53 @@
   }
 }
 
+/* Typography System */
+@layer components {
+  /* Display Text (Hero headlines) */
+  .display-hero {
+    @apply text-7xl md:text-8xl font-script leading-tight;
+  }
+
+  .display-title {
+    @apply text-4xl md:text-5xl lg:text-6xl font-serif leading-tight tracking-wide;
+  }
+
+  /* Headings */
+  .heading-1 {
+    @apply text-4xl md:text-5xl font-serif font-semibold leading-snug tracking-wide;
+  }
+
+  .heading-2 {
+    @apply text-3xl md:text-4xl font-serif leading-snug tracking-wide;
+  }
+
+  .heading-3 {
+    @apply text-2xl md:text-3xl font-heading leading-snug tracking-wide;
+  }
+
+  /* Body Text */
+  .body-large {
+    @apply text-xl md:text-2xl font-light leading-relaxed;
+  }
+
+  .body-base {
+    @apply text-base md:text-lg leading-relaxed;
+  }
+
+  .body-small {
+    @apply text-sm md:text-base leading-normal;
+  }
+
+  /* Special */
+  .label-caps {
+    @apply text-sm uppercase tracking-wider font-medium leading-normal;
+  }
+
+  .text-script {
+    @apply font-script text-sage-primary;
+  }
+}
+
 /* Accessibility: Respect user's motion preferences */
 @media (prefers-reduced-motion: reduce) {
   *,

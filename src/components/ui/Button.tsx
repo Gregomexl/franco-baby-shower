@@ -16,11 +16,11 @@ export function Button({
   icon,
   className = ''
 }: ButtonProps) {
-  const baseClasses = "w-full py-4 px-6 rounded-full font-medium text-lg flex items-center justify-center gap-3 transition-all shadow-lg"
+  const baseClasses = "w-full py-4 px-6 rounded-full text-lg flex items-center justify-center gap-3 transition-all shadow-lg"
 
   const variantClasses = {
-    primary: "bg-green-500 text-white hover:bg-green-600 hover:shadow-xl",
-    secondary: "bg-white text-green-500 border-2 border-green-500 hover:bg-green-50 hover:shadow-xl"
+    primary: "bg-green-500 text-white hover:bg-green-600 hover:shadow-xl font-semibold",
+    secondary: "bg-white text-green-500 border-2 border-green-500 hover:bg-green-50 hover:shadow-xl font-medium"
   }
 
   return (

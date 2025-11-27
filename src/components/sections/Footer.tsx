@@ -184,7 +184,7 @@ export function Footer() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-green-100/0 via-green-100/30 to-green-100/0 rounded-3xl blur-2xl"></div>
               <motion.p
-                className="relative text-6xl md:text-7xl lg:text-8xl font-script text-text-primary leading-relaxed px-8 py-6"
+                className="relative display-hero px-8 py-6"
                 style={{ color: '#7A9B84' }}
                 animate={{ scale: [1, 1.02, 1] }}
                 transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" as const }}
@@ -246,7 +246,7 @@ export function Footer() {
             <div className="absolute -bottom-4 -right-4 w-12 h-12 border-r-2 border-b-2 border-green-400/40 rounded-br-lg"></div>
 
             <div className="py-8 px-12">
-              <p className="text-3xl md:text-4xl text-text-primary font-serif tracking-wider font-light">
+              <p className="heading-2 font-light text-text-primary">
                 {EVENT_CONFIG.parents.names}
               </p>
             </div>

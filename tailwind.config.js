@@ -27,6 +27,14 @@ export default {
           sage: '#d4e2d4',
           ivory: '#fffef9',
         },
+        // Brand Colors (from design)
+        sage: {
+          primary: '#7A9B84',   // Main sage green used in Hero/Footer
+          light: '#E5EDD8',     // Background pistachio green
+        },
+        golden: '#E5C896',      // Golden tan for invitation text
+        peach: '#E5D4C1',       // Peach beige for accents
+        'brown-dark': '#8B6F47', // Dark brown for Franco name
         // Text
         text: {
           primary: '#4a5a4a',

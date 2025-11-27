@@ -39,7 +39,7 @@ export function Countdown() {
             viewport={{ once: true }}
             className="text-center"
           >
-            <h2 className="text-3xl md:text-4xl font-heading text-text-primary">
+            <h2 className="heading-2 text-text-primary">
               ¡Hoy es el día! 🎉
             </h2>
           </motion.div>
@@ -149,7 +149,7 @@ export function Countdown() {
         >
           <motion.h2
             variants={item}
-            className="text-3xl md:text-4xl font-heading text-center text-text-primary"
+            className="heading-2 text-center text-text-primary"
           >
             Faltan
           </motion.h2>
@@ -166,7 +166,7 @@ export function Countdown() {
                 <div className="text-4xl md:text-5xl font-bold text-green-500 font-heading tabular-nums">
                   {String(block.value).padStart(2, '0')}
                 </div>
-                <div className="text-sm md:text-base text-text-muted mt-2 uppercase tracking-wider">
+                <div className="label-caps text-text-muted mt-2">
                   {block.label}
                 </div>
               </div>
