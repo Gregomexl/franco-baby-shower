@@ -220,7 +220,10 @@ export function Hero() {
         <motion.p
           variants={item}
           className="body-large italic mb-4"
-          style={{ color: '#E5C896' }}
+          style={{
+            color: '#D4A872',
+            textShadow: '0 1px 2px rgba(0,0,0,0.1)'
+          }}
         >
           Acompáñanos a celebrar
         </motion.p>
