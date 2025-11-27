@@ -124,28 +124,8 @@ export function PhotoGallery() {
             </motion.h2>
           </motion.div>
 
-          {/* Divider */}
-          <motion.div
-            variants={item}
-            className="h-px bg-gradient-to-r from-transparent via-green-300 to-transparent"
-          />
-
-          {/* Photo Grid Preview - Placeholder */}
-          <motion.div variants={item} className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
-            {[1, 2, 3, 4, 5, 6].map((i) => (
-              <motion.div
-                key={i}
-                className="aspect-square bg-gradient-to-br from-green-100/30 to-green-50/30 rounded-2xl backdrop-blur-sm border border-green-200/30 flex items-center justify-center group hover:scale-105 transition-transform cursor-pointer"
-                whileHover={{ scale: 1.05 }}
-                onClick={handleViewGallery}
-              >
-                <ImageIcon className="w-12 h-12 text-green-300 group-hover:text-green-500 transition-colors" />
-              </motion.div>
-            ))}
-          </motion.div>
-
-          {/* Action Buttons */}
-          <motion.div variants={item} className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          {/* Action Button */}
+          <motion.div variants={item} className="flex justify-center items-center">
             <Button
               onClick={handleUploadPhotos}
               variant="primary"
@@ -153,15 +133,6 @@ export function PhotoGallery() {
               aria-label="Subir fotos al álbum"
             >
               Subir Fotos
-            </Button>
-
-            <Button
-              onClick={handleViewGallery}
-              variant="secondary"
-              icon={<ImageIcon className="w-5 h-5" />}
-              aria-label="Ver galería completa"
-            >
-              Ver Galería Completa
             </Button>
           </motion.div>
 
