@@ -19,8 +19,8 @@ export function Button({
   const baseClasses = "w-full py-4 px-6 rounded-full text-lg flex items-center justify-center gap-3 transition-all shadow-lg"
 
   const variantClasses = {
-    primary: "bg-green-500 text-white hover:bg-green-600 hover:shadow-xl font-semibold",
-    secondary: "bg-white text-green-500 border-2 border-green-500 hover:bg-green-50 hover:shadow-xl font-medium"
+    primary: "bg-[#A8D4A8] text-[#4A6B49] hover:bg-[#98C998] hover:shadow-xl font-semibold",
+    secondary: "bg-[#F0EDD8] text-[#6A8B74] hover:bg-[#E5E2C8] hover:shadow-xl font-semibold"
   }
 
   return (
