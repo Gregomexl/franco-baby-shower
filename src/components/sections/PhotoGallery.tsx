@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Camera, Upload, Image as ImageIcon } from 'lucide-react'
+import { Camera, Upload } from 'lucide-react'
 import { Container } from '../layout/Container'
 import { Button } from '../ui/Button'
 import { EVENT_CONFIG } from '../../config/eventData'
@@ -21,10 +21,6 @@ const item = {
 
 export function PhotoGallery() {
   const handleUploadPhotos = () => {
-    window.open(EVENT_CONFIG.photoGallery.googlePhotosAlbumUrl, '_blank')
-  }
-
-  const handleViewGallery = () => {
     window.open(EVENT_CONFIG.photoGallery.googlePhotosAlbumUrl, '_blank')
   }
 
