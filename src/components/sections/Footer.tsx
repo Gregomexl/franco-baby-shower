@@ -189,17 +189,20 @@ export function Footer() {
             className="flex justify-center gap-3 mb-10"
           >
             <motion.span
-              className="text-3xl text-green-400 opacity-70"
+              className="text-3xl opacity-70"
+              style={{ color: '#8FAA92' }}
               animate={{ scale: [1, 1.2, 1], y: [0, -5, 0] }}
               transition={{ duration: 2, repeat: Infinity, ease: "easeInOut", delay: 0 }}
             >♥</motion.span>
             <motion.span
-              className="text-4xl text-green-500 drop-shadow-md"
+              className="text-4xl drop-shadow-md"
+              style={{ color: '#7A9B84' }}
               animate={{ scale: [1, 1.2, 1], y: [0, -5, 0] }}
               transition={{ duration: 2, repeat: Infinity, ease: "easeInOut", delay: 0.3 }}
             >♥</motion.span>
             <motion.span
-              className="text-3xl text-green-400 opacity-70"
+              className="text-3xl opacity-70"
+              style={{ color: '#8FAA92' }}
               animate={{ scale: [1, 1.2, 1], y: [0, -5, 0] }}
               transition={{ duration: 2, repeat: Infinity, ease: "easeInOut", delay: 0.6 }}
             >♥</motion.span>
