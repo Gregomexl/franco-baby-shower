@@ -2,6 +2,36 @@ import { motion } from 'framer-motion'
 import { EVENT_CONFIG } from '../../config/eventData'
 import { Container } from '../layout/Container'
 
+// SVG Heart Icon Component
+const HeartIcon = ({ className, style }: { className?: string; style?: React.CSSProperties }) => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    className={className}
+    style={style}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+  </svg>
+)
+
+// SVG Paw Print Icon Component
+const PawIcon = ({ className, style }: { className?: string; style?: React.CSSProperties }) => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    className={className}
+    style={style}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <ellipse cx="8.5" cy="5" rx="2.5" ry="3"/>
+    <ellipse cx="15.5" cy="5" rx="2.5" ry="3"/>
+    <ellipse cx="5" cy="10" rx="2" ry="2.5"/>
+    <ellipse cx="19" cy="10" rx="2" ry="2.5"/>
+    <path d="M12 21c-2.5 0-4.5-2-5-4.5-.3-1.5.5-3 2-3.5 1-.3 2-.5 3-.5s2 .2 3 .5c1.5.5 2.3 2 2 3.5-.5 2.5-2.5 4.5-5 4.5z"/>
+  </svg>
+)
+
 const container = {
   hidden: { opacity: 0 },
   show: {
@@ -202,24 +232,30 @@ export function Footer() {
             variants={item}
             className="flex justify-center gap-3 mb-10"
           >
-            <motion.span
-              className="text-3xl opacity-70"
+            <motion.div
+              className="w-8 h-8 opacity-70"
               style={{ color: '#8FAA92' }}
               animate={{ scale: [1, 1.2, 1], y: [0, -5, 0] }}
               transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" as const, delay: 0 }}
-            >♥</motion.span>
-            <motion.span
-              className="text-4xl drop-shadow-md"
+            >
+              <HeartIcon style={{ color: '#8FAA92' }} />
+            </motion.div>
+            <motion.div
+              className="w-10 h-10 drop-shadow-md"
               style={{ color: '#7A9B84' }}
               animate={{ scale: [1, 1.2, 1], y: [0, -5, 0] }}
               transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" as const, delay: 0.3 }}
-            >♥</motion.span>
-            <motion.span
-              className="text-3xl opacity-70"
+            >
+              <HeartIcon style={{ color: '#7A9B84' }} />
+            </motion.div>
+            <motion.div
+              className="w-8 h-8 opacity-70"
               style={{ color: '#8FAA92' }}
               animate={{ scale: [1, 1.2, 1], y: [0, -5, 0] }}
               transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" as const, delay: 0.6 }}
-            >♥</motion.span>
+            >
+              <HeartIcon style={{ color: '#8FAA92' }} />
+            </motion.div>
           </motion.div>
 
           {/* Family Image */}
@@ -247,41 +283,49 @@ export function Footer() {
 
             {/* Dog Paw Prints */}
             <motion.div
-              className="absolute -top-10 left-1/4 text-4xl opacity-65"
-              style={{ color: '#8FAA92' }}
+              className="absolute -top-10 left-1/4 w-10 h-10 opacity-65"
               animate={{ rotate: [0, -10, 0], y: [0, -3, 0] }}
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" as const, delay: 0 }}
-            >🐾</motion.div>
+            >
+              <PawIcon style={{ color: '#8FAA92' }} />
+            </motion.div>
             <motion.div
-              className="absolute -top-6 right-1/3 text-3xl opacity-55"
-              style={{ color: '#7A9B84' }}
+              className="absolute -top-6 right-1/3 w-8 h-8 opacity-55"
               animate={{ rotate: [0, 15, 0], scale: [1, 1.05, 1] }}
               transition={{ duration: 3.2, repeat: Infinity, ease: "easeInOut" as const, delay: 0.3 }}
-            >🐾</motion.div>
+            >
+              <PawIcon style={{ color: '#7A9B84' }} />
+            </motion.div>
             <motion.div
-              className="absolute -bottom-10 right-1/4 text-4xl opacity-60"
-              style={{ color: '#8FAA92' }}
+              className="absolute -bottom-10 right-1/4 w-10 h-10 opacity-60"
               animate={{ rotate: [0, 10, 0], y: [0, 2, 0] }}
               transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut" as const, delay: 0.5 }}
-            >🐾</motion.div>
+            >
+              <PawIcon style={{ color: '#8FAA92' }} />
+            </motion.div>
             <motion.div
-              className="absolute -bottom-7 left-1/3 text-3xl opacity-50"
-              style={{ color: '#7A9B84' }}
+              className="absolute -bottom-7 left-1/3 w-8 h-8 opacity-50"
               animate={{ rotate: [0, -12, 0], scale: [1, 1.08, 1] }}
               transition={{ duration: 3.8, repeat: Infinity, ease: "easeInOut" as const, delay: 0.8 }}
-            >🐾</motion.div>
+            >
+              <PawIcon style={{ color: '#7A9B84' }} />
+            </motion.div>
             <motion.div
-              className="absolute top-1/2 -left-12 text-3xl opacity-55"
-              style={{ color: '#8FAA92', transform: 'translateY(-50%) rotate(-35deg)' }}
+              className="absolute top-1/2 -left-12 w-8 h-8 opacity-55"
+              style={{ transform: 'translateY(-50%) rotate(-35deg)' }}
               animate={{ scale: [1, 1.12, 1] }}
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" as const, delay: 1 }}
-            >🐾</motion.div>
+            >
+              <PawIcon style={{ color: '#8FAA92' }} />
+            </motion.div>
             <motion.div
-              className="absolute top-1/2 -right-10 text-3xl opacity-50"
-              style={{ color: '#7A9B84', transform: 'translateY(-50%) rotate(35deg)' }}
+              className="absolute top-1/2 -right-10 w-8 h-8 opacity-50"
+              style={{ transform: 'translateY(-50%) rotate(35deg)' }}
               animate={{ scale: [1, 1.1, 1], rotate: [35, 45, 35] }}
               transition={{ duration: 3.6, repeat: Infinity, ease: "easeInOut" as const, delay: 1.2 }}
-            >🐾</motion.div>
+            >
+              <PawIcon style={{ color: '#7A9B84' }} />
+            </motion.div>
 
             <div className="py-8 px-12">
               <p className="heading-2 font-light text-text-primary">
