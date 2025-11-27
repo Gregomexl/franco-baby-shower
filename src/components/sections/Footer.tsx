@@ -245,6 +245,44 @@ export function Footer() {
             <div className="absolute -bottom-4 -left-4 w-12 h-12 border-l-2 border-b-2 border-green-400/40 rounded-bl-lg"></div>
             <div className="absolute -bottom-4 -right-4 w-12 h-12 border-r-2 border-b-2 border-green-400/40 rounded-br-lg"></div>
 
+            {/* Dog Paw Prints */}
+            <motion.div
+              className="absolute -top-10 left-1/4 text-4xl opacity-65"
+              style={{ color: '#8FAA92' }}
+              animate={{ rotate: [0, -10, 0], y: [0, -3, 0] }}
+              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" as const, delay: 0 }}
+            >🐾</motion.div>
+            <motion.div
+              className="absolute -top-6 right-1/3 text-3xl opacity-55"
+              style={{ color: '#7A9B84' }}
+              animate={{ rotate: [0, 15, 0], scale: [1, 1.05, 1] }}
+              transition={{ duration: 3.2, repeat: Infinity, ease: "easeInOut" as const, delay: 0.3 }}
+            >🐾</motion.div>
+            <motion.div
+              className="absolute -bottom-10 right-1/4 text-4xl opacity-60"
+              style={{ color: '#8FAA92' }}
+              animate={{ rotate: [0, 10, 0], y: [0, 2, 0] }}
+              transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut" as const, delay: 0.5 }}
+            >🐾</motion.div>
+            <motion.div
+              className="absolute -bottom-7 left-1/3 text-3xl opacity-50"
+              style={{ color: '#7A9B84' }}
+              animate={{ rotate: [0, -12, 0], scale: [1, 1.08, 1] }}
+              transition={{ duration: 3.8, repeat: Infinity, ease: "easeInOut" as const, delay: 0.8 }}
+            >🐾</motion.div>
+            <motion.div
+              className="absolute top-1/2 -left-12 text-3xl opacity-55"
+              style={{ color: '#8FAA92', transform: 'translateY(-50%) rotate(-35deg)' }}
+              animate={{ scale: [1, 1.12, 1] }}
+              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" as const, delay: 1 }}
+            >🐾</motion.div>
+            <motion.div
+              className="absolute top-1/2 -right-10 text-3xl opacity-50"
+              style={{ color: '#7A9B84', transform: 'translateY(-50%) rotate(35deg)' }}
+              animate={{ scale: [1, 1.1, 1], rotate: [35, 45, 35] }}
+              transition={{ duration: 3.6, repeat: Infinity, ease: "easeInOut" as const, delay: 1.2 }}
+            >🐾</motion.div>
+
             <div className="py-8 px-12">
               <p className="heading-2 font-light text-text-primary">
                 {EVENT_CONFIG.parents.names}
