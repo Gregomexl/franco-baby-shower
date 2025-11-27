@@ -62,61 +62,61 @@ export function Footer() {
           className="absolute top-24 left-12 text-2xl opacity-60"
           style={{ color: '#7A9B84' }}
           animate={{ scale: [1, 1.15, 1], rotate: [0, 8, 0] }}
-          transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+          transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" as const }}
         >★</motion.div>
         <motion.div
           className="absolute top-1/3 left-16 text-xl opacity-55"
           style={{ color: '#7A9B84' }}
           animate={{ scale: [1, 1.1, 1], rotate: [0, -6, 0] }}
-          transition={{ duration: 4.3, repeat: Infinity, ease: "easeInOut", delay: 0.3 }}
+          transition={{ duration: 4.3, repeat: Infinity, ease: "easeInOut" as const, delay: 0.3 }}
         >★</motion.div>
         <motion.div
           className="absolute top-1/2 left-8 text-xl opacity-55"
           style={{ color: '#7A9B84' }}
           animate={{ scale: [1, 1.1, 1], rotate: [0, -8, 0] }}
-          transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+          transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut" as const, delay: 0.5 }}
         >★</motion.div>
         <motion.div
           className="absolute bottom-1/3 left-14 text-2xl opacity-60"
           style={{ color: '#7A9B84' }}
           animate={{ scale: [1, 1.12, 1], rotate: [0, 10, 0] }}
-          transition={{ duration: 4.8, repeat: Infinity, ease: "easeInOut", delay: 0.8 }}
+          transition={{ duration: 4.8, repeat: Infinity, ease: "easeInOut" as const, delay: 0.8 }}
         >★</motion.div>
         <motion.div
           className="absolute bottom-24 left-12 text-xl opacity-55"
           style={{ color: '#7A9B84' }}
           animate={{ scale: [1, 1.1, 1], rotate: [0, 10, 0] }}
-          transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+          transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" as const, delay: 1 }}
         >★</motion.div>
         <motion.div
           className="absolute top-20 right-12 text-2xl opacity-60"
           style={{ color: '#E5D4C1' }}
           animate={{ scale: [1, 1.15, 1], rotate: [0, -8, 0] }}
-          transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 0.3 }}
+          transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" as const, delay: 0.3 }}
         >★</motion.div>
         <motion.div
           className="absolute top-1/3 right-16 text-xl opacity-55"
           style={{ color: '#E5D4C1' }}
           animate={{ scale: [1, 1.1, 1], rotate: [0, 6, 0] }}
-          transition={{ duration: 4.4, repeat: Infinity, ease: "easeInOut", delay: 0.6 }}
+          transition={{ duration: 4.4, repeat: Infinity, ease: "easeInOut" as const, delay: 0.6 }}
         >★</motion.div>
         <motion.div
           className="absolute top-1/2 right-8 text-xl opacity-55"
           style={{ color: '#E5D4C1' }}
           animate={{ scale: [1, 1.1, 1], rotate: [0, 10, 0] }}
-          transition={{ duration: 4.6, repeat: Infinity, ease: "easeInOut", delay: 0.8 }}
+          transition={{ duration: 4.6, repeat: Infinity, ease: "easeInOut" as const, delay: 0.8 }}
         >★</motion.div>
         <motion.div
           className="absolute bottom-1/3 right-14 text-2xl opacity-60"
           style={{ color: '#E5D4C1' }}
           animate={{ scale: [1, 1.12, 1], rotate: [0, -8, 0] }}
-          transition={{ duration: 4.9, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+          transition={{ duration: 4.9, repeat: Infinity, ease: "easeInOut" as const, delay: 1 }}
         >★</motion.div>
         <motion.div
           className="absolute bottom-20 right-12 text-xl opacity-55"
           style={{ color: '#E5D4C1' }}
           animate={{ scale: [1, 1.15, 1], rotate: [0, -10, 0] }}
-          transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut", delay: 1.2 }}
+          transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut" as const, delay: 1.2 }}
         >★</motion.div>
       </div>
 
@@ -136,17 +136,17 @@ export function Footer() {
             <motion.div
               className="h-px w-24 bg-gradient-to-r from-transparent via-green-400/60 to-green-300"
               animate={{ scaleX: [0.8, 1, 0.8] }}
-              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" as const }}
             ></motion.div>
             <motion.span
               className="text-green-500 text-2xl"
               animate={{ y: [-3, 3, -3] }}
-              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" as const }}
             >❖</motion.span>
             <motion.div
               className="h-px w-24 bg-gradient-to-l from-transparent via-green-400/60 to-green-300"
               animate={{ scaleX: [0.8, 1, 0.8] }}
-              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" as const }}
             ></motion.div>
           </motion.div>
 
@@ -158,17 +158,17 @@ export function Footer() {
             <motion.span
               className="text-xl text-green-400 opacity-60"
               animate={{ y: [-2, 2, -2], rotate: [0, 5, 0] }}
-              transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
+              transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" as const }}
             >✦</motion.span>
             <motion.span
               className="text-3xl text-green-500 drop-shadow-lg"
               animate={{ scale: [1, 1.1, 1], rotate: [0, 10, 0] }}
-              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" as const }}
             >✦</motion.span>
             <motion.span
               className="text-xl text-green-400 opacity-60"
               animate={{ y: [2, -2, 2], rotate: [0, -5, 0] }}
-              transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
+              transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" as const }}
             >✦</motion.span>
           </motion.div>
 
@@ -192,19 +192,19 @@ export function Footer() {
               className="text-3xl opacity-70"
               style={{ color: '#8FAA92' }}
               animate={{ scale: [1, 1.2, 1], y: [0, -5, 0] }}
-              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut", delay: 0 }}
+              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" as const, delay: 0 }}
             >♥</motion.span>
             <motion.span
               className="text-4xl drop-shadow-md"
               style={{ color: '#7A9B84' }}
               animate={{ scale: [1, 1.2, 1], y: [0, -5, 0] }}
-              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut", delay: 0.3 }}
+              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" as const, delay: 0.3 }}
             >♥</motion.span>
             <motion.span
               className="text-3xl opacity-70"
               style={{ color: '#8FAA92' }}
               animate={{ scale: [1, 1.2, 1], y: [0, -5, 0] }}
-              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut", delay: 0.6 }}
+              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" as const, delay: 0.6 }}
             >♥</motion.span>
           </motion.div>
 
@@ -246,17 +246,17 @@ export function Footer() {
             <motion.span
               className="text-xl text-green-400 opacity-60"
               animate={{ opacity: [0.4, 0.8, 0.4], rotate: [0, 180, 360] }}
-              transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
+              transition={{ duration: 4, repeat: Infinity, ease: "linear" as const }}
             >✦</motion.span>
             <motion.span
               className="text-2xl text-green-500"
               animate={{ opacity: [0.6, 1, 0.6], rotate: [0, -180, -360] }}
-              transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
+              transition={{ duration: 3, repeat: Infinity, ease: "linear" as const }}
             >✦</motion.span>
             <motion.span
               className="text-xl text-green-400 opacity-60"
               animate={{ opacity: [0.4, 0.8, 0.4], rotate: [0, 180, 360] }}
-              transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
+              transition={{ duration: 4, repeat: Infinity, ease: "linear" as const }}
             >✦</motion.span>
           </motion.div>
         </motion.div>

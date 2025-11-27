@@ -89,43 +89,43 @@ export function Hero() {
           className="absolute top-24 left-20 text-2xl opacity-60"
           style={{ color: '#7A9B84' }}
           animate={{ scale: [1, 1.15, 1], rotate: [0, 10, 0] }}
-          transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+          transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" as const }}
         >★</motion.div>
         <motion.div
           className="absolute top-40 left-24 text-xl opacity-50"
           style={{ color: '#7A9B84' }}
           animate={{ scale: [1, 1.1, 1], rotate: [0, -6, 0] }}
-          transition={{ duration: 4.3, repeat: Infinity, ease: "easeInOut", delay: 0.3 }}
+          transition={{ duration: 4.3, repeat: Infinity, ease: "easeInOut" as const, delay: 0.3 }}
         >★</motion.div>
         <motion.div
           className="absolute top-1/3 left-16 text-xl opacity-55"
           style={{ color: '#7A9B84' }}
           animate={{ scale: [1, 1.1, 1], rotate: [0, -8, 0] }}
-          transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+          transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut" as const, delay: 0.5 }}
         >★</motion.div>
         <motion.div
           className="absolute top-1/2 left-20 text-2xl opacity-55"
           style={{ color: '#7A9B84' }}
           animate={{ scale: [1, 1.12, 1], rotate: [0, 8, 0] }}
-          transition={{ duration: 4.8, repeat: Infinity, ease: "easeInOut", delay: 0.8 }}
+          transition={{ duration: 4.8, repeat: Infinity, ease: "easeInOut" as const, delay: 0.8 }}
         >★</motion.div>
         <motion.div
           className="absolute bottom-1/3 left-24 text-2xl opacity-60"
           style={{ color: '#7A9B84' }}
           animate={{ scale: [1, 1.15, 1], rotate: [0, 12, 0] }}
-          transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+          transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" as const, delay: 1 }}
         >★</motion.div>
         <motion.div
           className="absolute bottom-32 left-16 text-xl opacity-50"
           style={{ color: '#7A9B84' }}
           animate={{ scale: [1, 1.1, 1], rotate: [0, -10, 0] }}
-          transition={{ duration: 5.2, repeat: Infinity, ease: "easeInOut", delay: 1.3 }}
+          transition={{ duration: 5.2, repeat: Infinity, ease: "easeInOut" as const, delay: 1.3 }}
         >★</motion.div>
         <motion.div
           className="absolute bottom-24 left-16 text-xl opacity-50"
           style={{ color: '#7A9B84' }}
           animate={{ scale: [1, 1.1, 1], rotate: [0, -5, 0] }}
-          transition={{ duration: 5.5, repeat: Infinity, ease: "easeInOut", delay: 1.5 }}
+          transition={{ duration: 5.5, repeat: Infinity, ease: "easeInOut" as const, delay: 1.5 }}
         >★</motion.div>
 
         {/* Peach/Beige Stars - Right Side */}
@@ -133,43 +133,43 @@ export function Hero() {
           className="absolute top-20 right-20 text-2xl opacity-60"
           style={{ color: '#E5D4C1' }}
           animate={{ scale: [1, 1.15, 1], rotate: [0, -8, 0] }}
-          transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 0.3 }}
+          transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" as const, delay: 0.3 }}
         >★</motion.div>
         <motion.div
           className="absolute top-36 right-24 text-xl opacity-50"
           style={{ color: '#E5D4C1' }}
           animate={{ scale: [1, 1.1, 1], rotate: [0, 6, 0] }}
-          transition={{ duration: 4.4, repeat: Infinity, ease: "easeInOut", delay: 0.6 }}
+          transition={{ duration: 4.4, repeat: Infinity, ease: "easeInOut" as const, delay: 0.6 }}
         >★</motion.div>
         <motion.div
           className="absolute top-1/3 right-16 text-xl opacity-55"
           style={{ color: '#E5D4C1' }}
           animate={{ scale: [1, 1.1, 1], rotate: [0, 10, 0] }}
-          transition={{ duration: 4.6, repeat: Infinity, ease: "easeInOut", delay: 0.8 }}
+          transition={{ duration: 4.6, repeat: Infinity, ease: "easeInOut" as const, delay: 0.8 }}
         >★</motion.div>
         <motion.div
           className="absolute top-1/2 right-20 text-2xl opacity-55"
           style={{ color: '#E5D4C1' }}
           animate={{ scale: [1, 1.12, 1], rotate: [0, -8, 0] }}
-          transition={{ duration: 4.9, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+          transition={{ duration: 4.9, repeat: Infinity, ease: "easeInOut" as const, delay: 1 }}
         >★</motion.div>
         <motion.div
           className="absolute bottom-1/3 right-24 text-2xl opacity-60"
           style={{ color: '#E5D4C1' }}
           animate={{ scale: [1, 1.15, 1], rotate: [0, -10, 0] }}
-          transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut", delay: 1.2 }}
+          transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut" as const, delay: 1.2 }}
         >★</motion.div>
         <motion.div
           className="absolute bottom-28 right-16 text-xl opacity-50"
           style={{ color: '#E5D4C1' }}
           animate={{ scale: [1, 1.1, 1], rotate: [0, 12, 0] }}
-          transition={{ duration: 5.3, repeat: Infinity, ease: "easeInOut", delay: 1.6 }}
+          transition={{ duration: 5.3, repeat: Infinity, ease: "easeInOut" as const, delay: 1.6 }}
         >★</motion.div>
         <motion.div
           className="absolute bottom-20 right-16 text-xl opacity-55"
           style={{ color: '#E5D4C1' }}
           animate={{ scale: [1, 1.1, 1], rotate: [0, 8, 0] }}
-          transition={{ duration: 5.5, repeat: Infinity, ease: "easeInOut", delay: 1.8 }}
+          transition={{ duration: 5.5, repeat: Infinity, ease: "easeInOut" as const, delay: 1.8 }}
         >★</motion.div>
       </div>
 
@@ -187,17 +187,17 @@ export function Hero() {
           <motion.span
             className="text-2xl text-green-400 opacity-60"
             animate={{ rotate: [0, 10, 0], y: [0, -5, 0] }}
-            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" as const }}
           >✦</motion.span>
           <motion.span
             className="text-3xl text-green-500"
             animate={{ scale: [1, 1.1, 1], rotate: [0, 15, 0] }}
-            transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
+            transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" as const }}
           >✦</motion.span>
           <motion.span
             className="text-2xl text-green-400 opacity-60"
             animate={{ rotate: [0, -10, 0], y: [0, -5, 0] }}
-            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" as const }}
           >✦</motion.span>
         </motion.div>
 
@@ -211,7 +211,7 @@ export function Hero() {
             alt="Teddy Bear with Balloons"
             className="w-full h-auto drop-shadow-2xl"
             animate={{ y: [0, -10, 0] }}
-            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" as const }}
           />
         </motion.div>
 
@@ -250,17 +250,17 @@ export function Hero() {
           <motion.div
             className="h-px w-20 bg-gradient-to-r from-transparent to-green-300"
             animate={{ scaleX: [0.8, 1, 0.8] }}
-            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" as const }}
           ></motion.div>
           <motion.span
             className="text-green-500 text-2xl"
             animate={{ rotate: [0, 180, 360] }}
-            transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
+            transition={{ duration: 8, repeat: Infinity, ease: "linear" as const }}
           >❖</motion.span>
           <motion.div
             className="h-px w-20 bg-gradient-to-l from-transparent to-green-300"
             animate={{ scaleX: [0.8, 1, 0.8] }}
-            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" as const }}
           ></motion.div>
         </motion.div>
 
@@ -282,17 +282,17 @@ export function Hero() {
           <motion.span
             className="text-xl text-green-400 opacity-60"
             animate={{ opacity: [0.4, 0.8, 0.4], rotate: [0, 180, 360] }}
-            transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
+            transition={{ duration: 4, repeat: Infinity, ease: "linear" as const }}
           >✦</motion.span>
           <motion.span
             className="text-2xl text-green-500"
             animate={{ opacity: [0.6, 1, 0.6], rotate: [0, -180, -360] }}
-            transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
+            transition={{ duration: 3, repeat: Infinity, ease: "linear" as const }}
           >✦</motion.span>
           <motion.span
             className="text-xl text-green-400 opacity-60"
             animate={{ opacity: [0.4, 0.8, 0.4], rotate: [0, 180, 360] }}
-            transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
+            transition={{ duration: 4, repeat: Infinity, ease: "linear" as const }}
           >✦</motion.span>
         </motion.div>
       </motion.div>

@@ -81,61 +81,61 @@ export function Countdown() {
           className="absolute top-20 left-12 text-2xl opacity-60"
           style={{ color: '#7A9B84' }}
           animate={{ scale: [1, 1.15, 1], rotate: [0, 10, 0] }}
-          transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut" }}
+          transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut" as const }}
         >★</motion.div>
         <motion.div
           className="absolute top-1/4 left-16 text-xl opacity-55"
           style={{ color: '#7A9B84' }}
           animate={{ scale: [1, 1.1, 1], rotate: [0, -6, 0] }}
-          transition={{ duration: 4.3, repeat: Infinity, ease: "easeInOut", delay: 0.3 }}
+          transition={{ duration: 4.3, repeat: Infinity, ease: "easeInOut" as const, delay: 0.3 }}
         >★</motion.div>
         <motion.div
           className="absolute top-1/3 left-8 text-xl opacity-55"
           style={{ color: '#7A9B84' }}
           animate={{ scale: [1, 1.1, 1], rotate: [0, -8, 0] }}
-          transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+          transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut" as const, delay: 0.5 }}
         >★</motion.div>
         <motion.div
           className="absolute top-1/2 left-14 text-2xl opacity-60"
           style={{ color: '#7A9B84' }}
           animate={{ scale: [1, 1.12, 1], rotate: [0, 8, 0] }}
-          transition={{ duration: 4.8, repeat: Infinity, ease: "easeInOut", delay: 0.8 }}
+          transition={{ duration: 4.8, repeat: Infinity, ease: "easeInOut" as const, delay: 0.8 }}
         >★</motion.div>
         <motion.div
           className="absolute bottom-20 left-12 text-xl opacity-55"
           style={{ color: '#7A9B84' }}
           animate={{ scale: [1, 1.1, 1], rotate: [0, 12, 0] }}
-          transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+          transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" as const, delay: 1 }}
         >★</motion.div>
         <motion.div
           className="absolute top-16 right-12 text-2xl opacity-60"
           style={{ color: '#E5D4C1' }}
           animate={{ scale: [1, 1.15, 1], rotate: [0, -8, 0] }}
-          transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 0.3 }}
+          transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" as const, delay: 0.3 }}
         >★</motion.div>
         <motion.div
           className="absolute top-1/4 right-16 text-xl opacity-55"
           style={{ color: '#E5D4C1' }}
           animate={{ scale: [1, 1.1, 1], rotate: [0, 6, 0] }}
-          transition={{ duration: 4.4, repeat: Infinity, ease: "easeInOut", delay: 0.6 }}
+          transition={{ duration: 4.4, repeat: Infinity, ease: "easeInOut" as const, delay: 0.6 }}
         >★</motion.div>
         <motion.div
           className="absolute top-1/3 right-8 text-xl opacity-55"
           style={{ color: '#E5D4C1' }}
           animate={{ scale: [1, 1.1, 1], rotate: [0, 10, 0] }}
-          transition={{ duration: 4.6, repeat: Infinity, ease: "easeInOut", delay: 0.8 }}
+          transition={{ duration: 4.6, repeat: Infinity, ease: "easeInOut" as const, delay: 0.8 }}
         >★</motion.div>
         <motion.div
           className="absolute top-1/2 right-14 text-2xl opacity-60"
           style={{ color: '#E5D4C1' }}
           animate={{ scale: [1, 1.12, 1], rotate: [0, -8, 0] }}
-          transition={{ duration: 4.9, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+          transition={{ duration: 4.9, repeat: Infinity, ease: "easeInOut" as const, delay: 1 }}
         >★</motion.div>
         <motion.div
           className="absolute bottom-16 right-12 text-xl opacity-55"
           style={{ color: '#E5D4C1' }}
           animate={{ scale: [1, 1.1, 1], rotate: [0, -10, 0] }}
-          transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut", delay: 1.2 }}
+          transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut" as const, delay: 1.2 }}
         >★</motion.div>
       </div>
 
