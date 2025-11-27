@@ -31,7 +31,7 @@ export function PhotoGallery() {
   return (
     <section className="py-12 md:py-16 relative overflow-hidden">
       {/* Watercolor Clouds */}
-      <div className="absolute inset-0 pointer-events-none opacity-50">
+      <div className="absolute inset-0 pointer-events-none opacity-50" aria-hidden="true">
         <svg className="absolute top-10 right-12" width="150" height="60" viewBox="0 0 150 60">
           <ellipse cx="38" cy="30" rx="38" ry="26" fill="white" opacity="0.7" filter="url(#photoBlur1)" />
           <ellipse cx="75" cy="28" rx="42" ry="28" fill="white" opacity="0.65" filter="url(#photoBlur1)" />
@@ -56,7 +56,7 @@ export function PhotoGallery() {
       </div>
 
       {/* Stars */}
-      <div className="absolute inset-0 pointer-events-none max-w-6xl mx-auto px-8">
+      <div className="absolute inset-0 pointer-events-none max-w-6xl mx-auto px-8" aria-hidden="true">
         <motion.div
           className="absolute top-20 left-12 text-2xl opacity-60"
           style={{ color: '#7A9B84' }}

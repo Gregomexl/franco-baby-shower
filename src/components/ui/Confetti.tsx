@@ -28,7 +28,7 @@ export function Confetti({ trigger }: ConfettiProps) {
           x: Math.random() * window.innerWidth,
           y: -20,
           rotation: Math.random() * 360,
-          color: colors[Math.floor(Math.random() * colors.length)],
+          color: colors[Math.floor(Math.random() * colors.length)] ?? '#ffffff',
           delay: Math.random() * 0.3,
         })
       }

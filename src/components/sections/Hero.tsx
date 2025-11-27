@@ -20,7 +20,7 @@ export function Hero() {
   return (
     <section className="min-h-screen flex items-center justify-center py-16 px-4 relative overflow-hidden">
       {/* Watercolor Clouds - Darker Outlines */}
-      <div className="absolute inset-0 pointer-events-none opacity-60">
+      <div className="absolute inset-0 pointer-events-none opacity-60" aria-hidden="true">
         {/* Cloud 1 - Top Left */}
         <svg className="absolute top-16 left-8" width="200" height="80" viewBox="0 0 200 80">
           <ellipse cx="50" cy="40" rx="50" ry="35" fill="white" opacity="0.7" filter="url(#blur)" />
@@ -83,7 +83,7 @@ export function Hero() {
       </div>
 
       {/* Scattered Stars */}
-      <div className="absolute inset-0 pointer-events-none">
+      <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
         {/* Sage Green Stars - Left Side */}
         <motion.div
           className="absolute top-24 left-20 text-2xl opacity-60"
@@ -183,6 +183,7 @@ export function Hero() {
         <motion.div
           variants={item}
           className="flex justify-center gap-4 mb-12"
+          aria-hidden="true"
         >
           <motion.span
             className="text-2xl text-green-400 opacity-60"
@@ -246,6 +247,7 @@ export function Hero() {
         <motion.div
           variants={item}
           className="flex items-center justify-center gap-3 my-8"
+          aria-hidden="true"
         >
           <motion.div
             className="h-px w-20 bg-gradient-to-r from-transparent to-green-300"
@@ -278,6 +280,7 @@ export function Hero() {
         <motion.div
           variants={item}
           className="flex justify-center gap-3 mt-10"
+          aria-hidden="true"
         >
           <motion.span
             className="text-xl text-green-400 opacity-60"

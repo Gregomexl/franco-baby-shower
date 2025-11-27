@@ -21,7 +21,7 @@ export function Footer() {
   return (
     <footer className="py-24 relative overflow-hidden">
       {/* Watercolor Clouds - Darker Outlines */}
-      <div className="absolute inset-0 pointer-events-none opacity-55">
+      <div className="absolute inset-0 pointer-events-none opacity-55" aria-hidden="true">
         <svg className="absolute top-12 left-8" width="180" height="70" viewBox="0 0 180 70">
           <ellipse cx="45" cy="35" rx="45" ry="30" fill="white" opacity="0.7" filter="url(#footerBlur1)" />
           <ellipse cx="90" cy="32" rx="48" ry="32" fill="white" opacity="0.65" filter="url(#footerBlur1)" />
@@ -57,7 +57,7 @@ export function Footer() {
       </div>
 
       {/* Scattered Stars */}
-      <div className="absolute inset-0 pointer-events-none max-w-6xl mx-auto px-8">
+      <div className="absolute inset-0 pointer-events-none max-w-6xl mx-auto px-8" aria-hidden="true">
         <motion.div
           className="absolute top-24 left-12 text-2xl opacity-60"
           style={{ color: '#7A9B84' }}

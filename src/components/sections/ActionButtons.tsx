@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { MapPin, MessageCircle, Gift, Calendar } from 'lucide-react'
+import { MapPin, MessageCircle, Gift, Calendar, Share2 } from 'lucide-react'
 import { useState } from 'react'
 import { EVENT_CONFIG } from '../../config/eventData'
 import { Button } from '../ui/Button'
@@ -49,12 +49,39 @@ export function ActionButtons() {
     }, 300)
   }
 
+  const handleShare = async () => {
+    const shareData = {
+      title: `Baby Shower ${EVENT_CONFIG.baby.name}`,
+      text: `¡Estás invitado al Baby Shower de ${EVENT_CONFIG.baby.name}! ${EVENT_CONFIG.event.dayOfWeek} ${EVENT_CONFIG.event.displayDate} a las ${EVENT_CONFIG.event.displayTime} en ${EVENT_CONFIG.venue.name}`,
+      url: window.location.href,
+    }
+
+    try {
+      // Check if Web Share API is supported and if we can share
+      if (navigator.canShare && navigator.canShare(shareData)) {
+        await navigator.share(shareData)
+      } else if (navigator.share) {
+        // Fallback if canShare is not supported but share is
+        await navigator.share(shareData)
+      } else {
+        // Fallback: copy to clipboard
+        await navigator.clipboard.writeText(`${shareData.title}\n\n${shareData.text}\n\n${shareData.url}`)
+        alert('Enlace copiado al portapapeles')
+      }
+    } catch (err) {
+      // User cancelled or error occurred
+      if (err instanceof Error && err.name !== 'AbortError') {
+        console.error('Error sharing:', err)
+      }
+    }
+  }
+
   return (
     <>
       <Confetti trigger={showConfetti} />
       <section className="py-12 md:py-16 relative overflow-hidden">
         {/* Watercolor Clouds - Darker Outlines */}
-        <div className="absolute inset-0 pointer-events-none opacity-45">
+        <div className="absolute inset-0 pointer-events-none opacity-45" aria-hidden="true">
           <svg className="absolute top-8 left-8" width="150" height="60" viewBox="0 0 150 60">
             <ellipse cx="38" cy="30" rx="38" ry="26" fill="white" opacity="0.7" filter="url(#actionBlur1)" />
             <ellipse cx="75" cy="28" rx="42" ry="28" fill="white" opacity="0.65" filter="url(#actionBlur1)" />
@@ -79,7 +106,7 @@ export function ActionButtons() {
         </div>
 
         {/* Stars */}
-        <div className="absolute inset-0 pointer-events-none max-w-6xl mx-auto px-8">
+        <div className="absolute inset-0 pointer-events-none max-w-6xl mx-auto px-8" aria-hidden="true">
           <motion.div
             className="absolute top-20 left-12 text-2xl opacity-60"
             style={{ color: '#7A9B84' }}
@@ -180,6 +207,17 @@ export function ActionButtons() {
                 aria-label="Ver mesa de regalos en Amazon"
               >
                 Mesa de Regalos
+              </Button>
+            </motion.div>
+
+            <motion.div variants={item}>
+              <Button
+                onClick={handleShare}
+                variant="secondary"
+                icon={<Share2 className="w-5 h-5" />}
+                aria-label="Compartir invitación"
+              >
+                Compartir Invitación
               </Button>
             </motion.div>
 

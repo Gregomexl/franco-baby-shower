@@ -51,7 +51,7 @@ export function Countdown() {
   return (
     <section className="py-12 md:py-16 relative overflow-hidden">
       {/* Watercolor Clouds - Darker Outlines */}
-      <div className="absolute inset-0 pointer-events-none opacity-50">
+      <div className="absolute inset-0 pointer-events-none opacity-50" aria-hidden="true">
         <svg className="absolute top-10 left-10" width="140" height="55" viewBox="0 0 140 55">
           <ellipse cx="35" cy="28" rx="35" ry="24" fill="white" opacity="0.7" filter="url(#countBlur1)" />
           <ellipse cx="70" cy="26" rx="40" ry="26" fill="white" opacity="0.65" filter="url(#countBlur1)" />
@@ -76,7 +76,7 @@ export function Countdown() {
       </div>
 
       {/* Stars */}
-      <div className="absolute inset-0 pointer-events-none max-w-6xl mx-auto px-8">
+      <div className="absolute inset-0 pointer-events-none max-w-6xl mx-auto px-8" aria-hidden="true">
         <motion.div
           className="absolute top-20 left-12 text-2xl opacity-60"
           style={{ color: '#7A9B84' }}
