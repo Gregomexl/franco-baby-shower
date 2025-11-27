@@ -114,9 +114,14 @@ export function PhotoGallery() {
               </motion.div>
             </div>
 
-            <h2 className="heading-1 text-text-primary">
-             ¡Comparte tus Fotos!
-            </h2>
+            <motion.h2
+              className="relative text-5xl md:text-6xl lg:text-7xl font-script leading-tight px-8 py-6"
+              style={{ color: '#7A9B84' }}
+              animate={{ scale: [1, 1.02, 1] }}
+              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" as const }}
+            >
+              ¡Comparte tus Fotos!
+            </motion.h2>
           </motion.div>
 
           {/* Divider */}
